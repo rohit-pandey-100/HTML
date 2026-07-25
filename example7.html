@@ -1,0 +1,58 @@
+<!--
+event attributes
+=>Event attributes are used to invoke/to call JavaScript logics from HTML page.
+=>Event attribute must be start with "on" word.
+  for ex:
+	onclick, onfocus, oninput, onchange, onsubmit,
+	onmouseover, onmouseout, onload, onpaste,
+	oncut, ondblclick....
+	
+Note:
+ID attribute is used to communicate JavaScript with the HTML tag or elements
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My 7th Web page for GoodLife</title>
+    <link rel="icon" href="/img/logo1.avif">
+</head>
+
+<body>
+    <h2>Using the Event Attribute</h2>
+
+    <h2 onclick="alert('mouse left button clicked')">Click here</h2>
+    <span
+        onclick="alert('🚭 Tobacco is a leading cause of many cancers. Quitting today can greatly reduce your risk.')">Click
+        On Me</span> <br> <br>
+
+    <span
+        onclick="alert('🚭 Tobacco kills thousands of people every day and is a major cause of cancer. Quit today to protect your health and your future.')">Click
+        On Me and Learn More</span>
+    <!--		 
+	data manipulations:
+		id.textContent='value'
+		id.textContent='';
+		id.textContent
+		Note: paired tags only -->
+
+    <h2 id="x" onmouseover="x.textContent='⚠️ Early detection can save lives.'"
+        onmouseout="x.textContent='🎗️ Cancer Awareness'">
+        🎗️ Cancer Awareness
+    </h2>
+
+    <h2 id="z" onmouseover="z.style.color='red'" onmouseout="z.style.color='black'">
+        🚨 Know the Warning Signs of Cancer
+    </h2>
+
+    <!--
+	style manipulations:
+		id.style.property='value'	
+		Note: paired & unpaired -->
+    <h2 id="y" onmouseover="y.style.color='red'" onmouseout="y.style.color='green'">
+        Hello World
+    </h2>
+</body>
+
+</html>
