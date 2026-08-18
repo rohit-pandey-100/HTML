@@ -1,0 +1,59 @@
+<!-- example on "input" tag -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My 25th Web page</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body id="by">
+    <h2>demo on html5 input elements</h2>
+
+    <form id="frm" action="test">
+
+        <label for="em">enter email</label>
+        <input type="email" id="em" name="em" />
+        <br>
+
+        <label for="u">enter url</label>
+        <input type="url" id="u" name="u">
+        <br>
+
+        <label for="d">select date</label>
+        <input type="date" id="d" name="d">
+        <br> <!-- yyyy-mm-dd -->
+
+        <label for="t">select time</label>
+        <input type="time" id="t" name="t">
+        <br>
+
+        <label for="dt">select date & time</label>
+        <input type="datetime-local" id="dt" name="dt">
+        <br>
+
+        <label for="w">select week</label>
+        <input type="week" id="w" name="w">
+        <bR>
+
+        <label for="m">select month</label>
+        <input type="month" id="m" name="m">
+        <br>
+
+        <label for="amt">Car Loan Amount</label>
+        <input type="text" id="tb" name="tb" readonly>
+        <br>
+        <input type="range" id="amt" name="amt" style="width:300px; accent-color:orange;" min="0" max="100000"
+            oninput="tb.value=amt.value">
+        <br> <!-- min-0, max-100 -->
+
+        <input type="color" id="c" name="c" oninput="by.style.background=c.value">
+        <br>
+        <!-- <input type="submit"> Or -->
+        <button type="reset">Clear All</button>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
